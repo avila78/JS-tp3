@@ -21,12 +21,19 @@ do {const ciudadIngresada = prompt('Ingrese una ciudad y el país al cual perten
   while (confirm('Desea agregar otra ciudad?'))
     
 document.write (`<p>El arreglo de ciudades tiene ${listaCiudades.length} elementos.</p>`)
-document.write (`<p>Elemento 1er posición: ${listaCiudades[0]}</p>`)
-document.write (`<p>Elemento 3er posición: ${listaCiudades[2]}</p>`)
-document.write (`<p>Elemento última posición: ${listaCiudades[listaCiudades.length - 1]}</p>`)
 
-listaCiudades.push('Paris, Francia')
-document.write (`<p>Elemento última posición: ${listaCiudades[listaCiudades.length - 1]}</p>`)
+document.write ('<ul>');
+document.write (`<li>Elemento 1er posición: ${listaCiudades[0]}</li>`)
+document.write (`<li>Elemento 3er posición: ${listaCiudades[2]}</li>`)
+document.write (`<li>Elemento última posición: ${listaCiudades[listaCiudades.length - 1]}</li>`)
+document.write ('</ul>');
+
+listaCiudades.push('Paris')
+document.write ('<ul>');
+document.write (`<li>Elemento última posición: ${listaCiudades[listaCiudades.length - 1]}</li>`)
+document.write ('</ul>');
+
+listaCiudades.splice(1, 0, 'Barcelona');
 
 document.write ('<h1>Arreglo de ciudades</h1>');
 document.write ('<ul>');
