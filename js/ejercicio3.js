@@ -10,3 +10,10 @@ for (let i = 0; i < 50; i++) {
   suma.push(dado1+dado2);
 }
 console.log(suma);
+
+document.write(`<table><tbody>`)
+document.write(`<tr>`)
+document.write(`<td> Suma </td>`)
+document.write(`<td> Apariciones </td>`)
+document.write(`</tr>`)
+document.write(`</td></td>`)
