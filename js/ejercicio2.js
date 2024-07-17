@@ -12,9 +12,9 @@ Input:
 */
 //`${ciudadIngresada},`
 
-let listaCiudades = [];
+const listaCiudades = [];
 
-do {const ciudadIngresada = prompt('Ingrese una ciudad y el país al cual pertenece');
+do {let ciudadIngresada = prompt('Ingrese una ciudad y el país al cual pertenece');
   listaCiudades.push(ciudadIngresada);
   console.log(listaCiudades)
   }
